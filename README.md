@@ -1,6 +1,6 @@
 # **Sweatmap : le prototype, version web **
 
-Code source du prototype de l'application Angular 2 : Sweatmap, qui sert à géolocaliser ses activités sportives dans le cadre du [tutoriel de BTheWeb sur le protoypage, version Web]().
+Code source du prototype de l'application Angular 2 : Sweatmap, qui sert à géolocaliser ses activités sportives dans le cadre du [tutoriel de BTheWeb sur le protoypage, version Web](https://btheweb.blog/2017/04/08/sweatmap-4-prototype-1-version-web/).
 
 Il est fortement conseiller de lire tous les articles de la série qui commence [ici](https://btheweb.blog/2017/03/20/sweatmap-0-realiser-une-application-angular-2/).
 
