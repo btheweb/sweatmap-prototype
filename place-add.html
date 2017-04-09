@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Sweatmap, géolocalisez vos activités sportives</title>
+
+    <!-- Bootstrap css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!--Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Propeller css -->
+    <link href="css/propeller.min.css" rel="stylesheet">
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header Starts -->
+    <!--Start Nav bar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top pmd-navbar pmd-z-depth">
+
+        <div class="container-fluid">
+            <div class="pmd-navbar-right-icon pull-right navigation">
+            </div>
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a href="javascript:void(0);" class="btn btn-sm pmd-btn-fab pmd-btn-flat pmd-ripple-effect pull-left margin-r8 pmd-sidebar-toggle"><i class="material-icons">menu</i></a>
+                <a href="index.html" class="navbar-brand">SWEATMAP</a>
+            </div>
+        </div>
+
+    </nav>
+    <!--End Nav bar -->
+    <!-- Header Ends -->
+
+    <!-- Sidebar Starts -->
+    <div class="pmd-sidebar-overlay"></div>
+
+    <!-- Left sidebar -->
+    <aside class="pmd-sidebar sidebar-default pmd-sidebar-slide-push pmd-sidebar-left pmd-sidebar-open bg-fill-darkblue sidebar-with-icons" role="navigation">
+        <ul class="nav pmd-sidebar-nav">
+            <li>
+                <a class="pmd-ripple-effect" href="place-master.html">
+                    <i class="material-icons media-left pmd-sm">location_on</i>
+                    <span class="media-body">Mes lieux</span>
+                </a>
+            </li>
+            <li>
+                <a class="pmd-ripple-effect" href="place-add.html">
+                    <i class="material-icons media-left pmd-sm">add_location</i>
+                    <span class="media-body">Ajouter un lieux</span>
+                </a>
+            </li>
+            <li>
+                <a class="pmd-ripple-effect" href="profile-edit.html">
+                    <i class="material-icons media-left pmd-sm">account_box</i>
+                    <span class="media-body">Mon profil</span>
+                </a>
+            </li>
+            <li>
+                <a class="pmd-ripple-effect" href="info-help.html">
+                    <i class="material-icons media-left pmd-sm">help</i>
+                    <span class="media-body">Aide</span>
+                </a>
+            </li>
+            <li>
+                <a class="pmd-ripple-effect" href="profile-login.html">
+                    <i class="material-icons media-left pmd-sm">power_settings_new</i>
+                    <span class="media-body">Déconnexion</span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <!-- End Left sidebar -->
+    <!-- Sidebar Ends -->
+
+    <!--content area start-->
+    <div id="content" class="pmd-content inner-page">
+
+        <!--tab start-->
+        <div class=" container-fluid full-width-container contact">
+            <div class="row map-location">
+                <div class="section col-lg-12 col-md-12 col-sm-12 col-xs-12" id="contact">
+                    <!-- section content start-->
+                    <section class="contact-page">
+                        <div class="row contact-map">
+                            <div class="iframe-overlay" style="max-width:100%;overflow:hidden;height:500px;background-color: lightgray">
+                                <div style="height:100%; width:100%;max-width:100%;" id="google-maps-display" style="background-color: lightgray">
+                                </div>
+                            </div>
+                            <div class="contact-form">
+                                <div>
+                                    <div class="row">
+                                        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+                                            <div class="contact-details pmd-card pmd-z-depth fill">
+                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 feedback-form">
+                                                    <h1 class="pmd-display1">Ajouter un lieu</h1>
+                                                    <div class="common-form-style">
+                                                        <form class="account-setting" method="post">
+                                                            <div class="form-group pmd-textfield pmd-textfield-floating-label">
+                                                                <label for="sub">Adresse</label>
+                                                                <input type="text" id="sub" class="form-control">
+                                                            </div>
+                                                            <div class="form-group pmd-textfield pmd-textfield-floating-label">
+                                                                <label for="sub">Titre</label>
+                                                                <input type="text" id="sub" class="form-control">
+                                                            </div>
+                                                            <div class="form-group pmd-textfield pmd-textfield-floating-label">
+                                                                <label for="message">Description</label>
+                                                                <textarea id="message" class="form-control" rows="10" style="height: 12em"></textarea>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label class="pmd-checkbox checkbox-pmd-ripple-effect">
+                                                                    <input type="checkbox" value="">
+                                                                    <span class="pmd-checkbox">Dans mes favoris</span>
+                                                                </label>
+                                                            </div>
+                                                            <a href="place-master.html" class="btn pmd-btn-raised pmd-ripple-effect btn-primary green ">Enregistrer</a>
+                                                            <a href="place-master.html" class="btn pmd-btn-raised pmd-ripple-effect btn-primary green ">Annuler</a>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 adress-col">
+                                                    <p class="sub-title">Choisissez une activité :</p>
+                                                    <h1>
+                                                        <select class="form-control">
+                                                            <option>Football</option>
+                                                            <option>Volleyball</option>
+                                                            <option>Basketball</option>
+                                                            <option>Tennis</option>
+                                                            <option>Natation</option>
+                                                        </select>
+                                                    </h1>
+                                                    <img src="http://propeller.in/assets/images/profile-pic.png " width="1184 " height="1184 " class="img-responsive ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- section content end -->
+                </div>
+            </div>
+        </div>
+        <!-- tab end -->
+    </div>
+    <!-- content area end -->
+
+    <!-- Footer Starts -->
+    <footer class="admin-footer">
+        <div class="container-fluid">
+            <ul class="list-unstyled list-inline">
+                <li>
+                    <span class="pmd-card-subtitle-text">Sweatmap &copy; 2017. Tous droits réservés.</span>
+                    <h3 class="pmd-card-subtitle-text">Consulter notre <a href="info-privacy-policy.html">Politique de confidentialité.</a></h3>
+                </li>
+                <li class="pull-right download-now">
+                    <a href="newsletter-subscribe.html">
+                        <div>
+                            <i class="material-icons media-left pmd-md">rss_feed</i>
+                        </div>
+                        <div>
+                            <span class="pmd-card-subtitle-text">Suivez nous</span>
+                            <h3 class="pmd-card-title-text">Newsletter</h3>
+                        </div>
+                    </a>
+                </li>
+                <li class="pull-right for-support">
+                    <a href="">
+                        <div>
+                            <i class="material-icons media-left pmd-md">chat</i>
+                        </div>
+                        <div>
+                            <span class="pmd-card-subtitle-text">Pour le Support</span>
+                            <h3 class="pmd-card-title-text">support@sweat.map</h3>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!-- Footer Ends -->
+
+    <!-- jQuery before Propeller.js -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/propeller.min.js"></script>
+</body>
+
+</html>
