@@ -1,0 +1,5 @@
+@import 'propeller-theme.css';
+@import 'propeller-admin.css';
+.swm-master-grid .pmd-card {
+    margin-top: 1em;
+}
